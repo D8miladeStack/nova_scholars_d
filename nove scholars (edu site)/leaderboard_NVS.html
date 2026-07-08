@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard | Nova Scholars</title>
+    <link rel="stylesheet" href="Static/css/NVS.css">
+    <link rel="stylesheet" href="Static/css/leaderboard-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="site-nav">
+        <div class="nav-brand" aria-label="Nova Scholars home">
+            <i class="fa-solid fa-graduation-cap nav-brand-icon" aria-hidden="true"></i>
+        </div>
+        <button class="nav-toggle" id="nav-toggle" type="button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="f_ul">
+            <li class="f_li"><a href="index.html" class="f_lk" id="f_lk_leaderboard">Home</a></li>
+            <li class="f_li"><a href="about_NVS.html" class="f_lk" id="f_lk_leaderboard">About</a></li>
+            <li class="f_li"><a href="resources_NVS.html" class="f_lk" id="f_lk_leaderboard">Resources</a></li>
+            <li class="f_li"><a href="contact_NVS.html" class="f_lk" id="f_lk_leaderboard">Contact</a></li>
+            <li class="f_li"><a href="cbt_NVS.html" class="f_lk" id="f_lk_leaderboard">CBT</a></li>
+            <li class="f_li"><a href="leaderboard_NVS.html" class="f_lk" id="f_lk_leaderboard">Leaderboard</a></li>
+            <li class="f_li"><a href="login_NVS.html" id="reg" class="f_lk" id="f_lk_leaderboard">Login</a></li>
+            <li class="f_li"><a href="signup_NVS.html" id="reg" class="f_lk" id="f_lk_leaderboard">Signup</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-shell">
+        <section class="page-hero">
+            <span class="hero-kicker">Leaderboard</span>
+            <h1>Celebrate progress and keep learners motivated.</h1>
+            <p>The leaderboard gives students a reason to keep practicing. It turns revision into a healthy challenge
+                and helps top performers stand out.</p>
+        </section>
+
+        <section class="leaderboard-shell">
+            <div class="leaderboard-top">
+                <div class="leaderboard-copy">
+                    <h2>Top CBT scorers</h2>
+                    <p>Track the highest-performing students and stay motivated with live updates, filters, and pagination.</p>
+                </div>
+                <form class="leaderboard-controls" aria-label="Leaderboard filters">
+                    <label for="leaderboard-search">
+                        Search
+                        <input id="leaderboard-search" type="search" placeholder="Search by student name" aria-label="Search leaderboard by name">
+                    </label>
+                    <label for="leaderboard-test">
+                        Test type
+                        <select id="leaderboard-test" aria-label="Filter leaderboard by test type">
+                            <option value="All">All tests</option>
+                            <option value="Biology CBT">Biology CBT</option>
+                            <option value="Chemistry CBT">Chemistry CBT</option>
+                            <option value="Physics CBT">Physics CBT</option>
+                            <option value="Maths CBT">Maths CBT</option>
+                        </select>
+                    </label>
+                    <label for="leaderboard-date">
+                        Date
+                        <select id="leaderboard-date" aria-label="Filter leaderboard by date">
+                            <option value="All">All dates</option>
+                            <option value="Today">Today</option>
+                            <option value="This week">This week</option>
+                            <option value="This month">This month</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+
+            <div class="leaderboard-card" role="region" aria-labelledby="leaderboard-title">
+                <div class="leaderboard-header-row">
+                    <div>
+                        <h3 id="leaderboard-title">CBT Leaderboard</h3>
+                        <p id="leaderboardDescription">This table shows the top CBT test scorers with real-time updates, pagination, and filter controls.</p>
+                    </div>
+                    <div class="leaderboard-live" aria-live="polite" aria-atomic="true" id="leaderboard-live">Latest score updates appear here.</div>
+                </div>
+
+                <div class="leaderboard-table-wrap">
+                    <table class="leaderboard-table" aria-describedby="leaderboardDescription">
+                        <caption class="sr-only">Top CBT scorers</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Rank</th>
+                                <th scope="col">Student</th>
+                                <th scope="col">Score</th>
+                                <th scope="col">Test type</th>
+                                <th scope="col">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Amina Yusuf</td>
+                                <td>98%</td>
+                                <td>Physics CBT</td>
+                                <td>2026-06-30</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Emeka Okafor</td>
+                                <td>96%</td>
+                                <td>Maths CBT</td>
+                                <td>2026-06-29</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Grace Eze</td>
+                                <td>95%</td>
+                                <td>Chemistry CBT</td>
+                                <td>2026-06-28</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Tobi Johnson</td>
+                                <td>94%</td>
+                                <td>Biology CBT</td>
+                                <td>2026-06-27</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Chioma Nwosu</td>
+                                <td>93%</td>
+                                <td>Physics CBT</td>
+                                <td>2026-06-26</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Samuel Ade</td>
+                                <td>92%</td>
+                                <td>Maths CBT</td>
+                                <td>2026-06-25</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Faith Ndu</td>
+                                <td>91%</td>
+                                <td>Chemistry CBT</td>
+                                <td>2026-06-24</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Ifeoma Chukwu</td>
+                                <td>90%</td>
+                                <td>Biology CBT</td>
+                                <td>2026-06-23</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>David Bello</td>
+                                <td>89%</td>
+                                <td>Physics CBT</td>
+                                <td>2026-06-22</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Ngozi Umeh</td>
+                                <td>88%</td>
+                                <td>Maths CBT</td>
+                                <td>2026-06-21</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="leaderboard-empty hidden" id="leaderboard-empty">No scores match your filter. Try updating your search or filter criteria.</div>
+                <div class="leaderboard-pagination" aria-label="Leaderboard pagination" id="leaderboard-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot_cont">
+            <div class="contact">
+                <h3 id="ql">Get intouch</h3>
+                <ul id="foot">
+                    <li id="s_li"><a href="contact_NVS.html" id="sl">WhatsApp channel</a></li>
+                    <li id="s_li"><a href="contact_NVS.html" id="sl">Send email</a></li>
+                    <li id="s_li"><a href="contact_NVS.html" id="sl">Call the school office</a></li>
+                </ul>
+            </div>
+            <div id="qlinks">
+                <h3 id="ql">Quick nav</h3>
+                <ul>
+                    <li id="s_li"><a href="index.html" id="sl">Home</a></li>
+                    <li id="s_li"><a href="about_NVS.html" id="sl">About</a></li>
+                    <li id="s_li"><a href="resources_NVS.html" id="sl">Resources</a></li>
+                    <li id="s_li"><a href="contact_NVS.html" id="sl">Contact</a></li>
+                    <li id="s_li"><a href="cbt_NVS.html" id="sl">CBT</a></li>
+                    <li id="s_li"><a href="leaderboard_NVS.html" id="sl">Leaderboard</a></li>
+                </ul>
+            </div>
+            <div class="school-info">
+                <h3 id="ql">School info</h3>
+                <ul>
+                    <li id="s_li"><a href="about_NVS.html" id="sl">About the school</a></li>
+                    <li id="s_li"><a href="resources_NVS.html" id="sl">Learning resources</a></li>
+                    <li id="s_li"><a href="cbt_NVS.html" id="sl">Exam portal</a></li>
+                    <li id="s_li"><a href="contact_NVS.html" id="sl">Admission & support</a></li>
+                </ul>
+            </div>
+            <div class="school-info">
+                <h3 id="ql">School info</h3>
+                <ul>
+                    <li id="s_li"><a href="about_NVS.html" id="sl">About the school</a></li>
+                    <li id="s_li"><a href="resources_NVS.html" id="sl">Learning resources</a></li>
+                    <li id="s_li"><a href="cbt_NVS.html" id="sl">Exam portal</a></li>
+                    <li id="s_li"><a href="contact_NVS.html" id="sl">Admission & support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="last">
+            <p>&copy;2026 Nova Scholars. All rights reserved.</p>
+            <p>Cookie prefrences</p>
+            <p>Do not sell or share my personal information</p>
+        </div>
+    </footer>
+    <script src="Static/js/script.js"></script>
+</body>
+
+</html>

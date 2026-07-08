@@ -1,0 +1,119 @@
+body {
+    background: radial-gradient(circle at top, rgba(16, 41, 69, 0.16), transparent 28%), linear-gradient(180deg, #f6f8fc 0%, #eef2f8 100%);
+}
+
+
+#f_lk_cbt:link{
+    color: var(--primary-dark);
+    padding: 10px;
+}
+#f_lk_cbt:visited{
+    color: var(--primary-dark);
+}
+#f_lk_cbt:hover{
+    color: var(--white);
+    background: var(--accent-dark);
+    border-radius: 10px;
+}
+#f_lk_cbt:active{
+    color: var(--primary-dark);
+}
+
+
+
+.page-shell {
+    width: min(1120px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 40px 0 72px;
+}
+
+.page-hero {
+    /* background: linear-gradient(135deg, #ffffff, #f4f6fb);
+    border-radius: 24px;
+    padding: 36px;
+    box-shadow: 0 18px 40px rgba(19, 34, 56, 0.12);
+    margin-top: 32px; */
+    padding: 0% 15% 0 13%;
+} 
+
+.hero-kicker {
+    display: inline-block;
+    background: rgba(201, 162, 39, 0.12);
+    color: var(--accent-dark);
+    padding: 8px 14px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.page-hero h1 {
+    background: transparent;
+    color: var(--primary-dark);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    margin-bottom: 12px; 
+}
+
+.page-hero p {
+    background: transparent;
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+    background: transparent;
+}
+
+.action-link {
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 999px;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: var(--white);
+    box-shadow: 0 10px 24px rgba(16, 41, 69, 0.2);
+}
+
+.action-link.secondary {
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+}
+
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    margin-top: 24px;
+    background: transparent;
+}
+
+.page-card {
+    background: transparent;
+    border-radius: 50% 0 0 0;
+    padding: 24px;
+    /* box-shadow: 0 3px 15px rgba(19, 34, 56, 0.12); */
+    border: 1px solid rgba(201, 162, 39, 0.08);
+}
+
+.page-card h2{
+    color: var(--primary-dark);
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+.page-card p,
+.page-card label {
+    background: transparent;
+    color: var(--text);
+    line-height: 1.7;
+}
+
+
+@media (max-width: 768px) {
+    #f_lk_cbt:link{
+        backdrop-filter: blur(0px);
+    }
+}

@@ -1,0 +1,136 @@
+body {
+    background: linear-gradient(180deg, #f5f7fb 0%, #eef2f8 100%);
+}
+
+
+
+#f_lk_login:link{
+    color: var(--primary-dark);
+    padding: 10px;
+}
+#f_lk_login:visited{
+    color: var(--primary-dark);
+}
+#f_lk_login:hover{
+    color: var(--white);
+    background: var(--accent-dark);
+    border-radius: 10px;
+}
+#f_lk_login:active{
+    color: var(--primary-dark);
+}
+
+
+.page-shell {
+    width: min(1120px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.page-hero {
+    background: transparent;
+    /* border-radius: 24px; */
+    padding: 36px;
+    /* box-shadow: 0 18px 40px rgba(19, 34, 56, 0.12); */
+    /* margin-top: 32px; */
+}
+
+.hero-kicker {
+    display: inline-block;
+    background: rgba(201, 162, 39, 0.12);
+    color: var(--accent-dark);
+    padding: 8px 14px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.page-hero h1 {
+    background: transparent;
+    color: var(--primary-dark);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    margin-bottom: 12px; 
+}
+
+.page-hero p {
+    background: transparent;
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 40px;
+    margin-top: 24px;
+    background: transparent;
+    align-items: center;
+}
+
+.page-card {
+    /* background: var(--white); */
+    border-radius: 22px;
+    padding: 50px;
+    box-shadow: 0 12px 28px rgba(19, 34, 56, 0.12);
+    border: 1px solid rgba(201, 162, 39, 0.08);
+}
+
+.page-card h2,
+.page-card h3 {
+    color: var(--primary-dark);
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+.page-card p,
+.page-card li,
+.page-card label {
+    background: transparent;
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.page-card ul {
+    padding-left: 20px;
+    background: transparent;
+}
+
+.page-form {
+    display: grid;
+    gap: 14px;
+    background: transparent;
+}
+
+.form-row {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    background: transparent;
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1px solid rgba(11, 92, 255, 0.18);
+    background: #f8fbff;
+    color: var(--text);
+}
+
+.form-control:focus {
+    outline: 2px solid rgba(255, 106, 0, 0.35);
+    outline-offset: 2px;
+}
+
+.submit-btn {
+    border: none;
+    cursor: pointer;
+    justify-self: start;
+    padding: 14px 20px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: var(--white);
+    font-weight: 700;
+}
+
+
